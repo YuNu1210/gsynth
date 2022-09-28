@@ -1640,9 +1640,9 @@ synth.mc<-function(Y, # Outcome variable, (T*N) matrix
                 if (con1 & con2) {
                     break
                 }
-                if (cv.n > 200) {
-                    stop("Some units have too few pre-treatment observations. Try to remove them.")
-                }
+               ## if (cv.n > 200) {
+               ##     stop("Some units have too few pre-treatment observations. Try to remove them.")
+               ## }
             }
             rmCV[,i] <- cv.id
             ocicv <- setdiff(oci, cv.id)
